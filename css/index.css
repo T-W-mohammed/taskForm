@@ -1,0 +1,89 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Work Sans', sans-serif;
+}
+
+html{
+	scroll-behavior: smooth;
+} 
+.container{
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-right:  auto;
+	margin-left:   auto;
+	
+	
+	
+}
+
+@media(min-width: 768px){
+	.container{
+		width: 750px;
+	}
+
+}
+@media(min-width: 992px){
+	.container{
+		width:970px;
+	}	
+}
+@media(min-width: 1200px){
+	.container{
+		width:1170px;
+	}
+}
+.container{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+.container h2{
+	margin-bottom: 20px;
+	font-size: 35px;
+    color: #888;
+    text-transform: capitalize;
+}
+form{
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	gap:10px;
+	transition: .5s ease-in-out;
+}
+form input,
+form #list,
+form textarea{
+	padding: 15px 20px;
+	border:2px solid #ddd;
+	border-radius: 4px;
+	outline: none;
+	width: 100%;
+	box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+}
+[type='checkbox'],
+[type="radio"]{
+	height: 20px
+}
+form .group {
+	display: flex;
+	flex-wrap: wrap;
+	gap:10px;
+}
+form .group input{
+	flex:1 0 300px;
+}
+form .flex{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	cursor: pointer;
+}
+.shadow{
+	box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+	padding:40px;
+	border-radius: 5px;
+}

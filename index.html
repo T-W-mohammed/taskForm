@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>form</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<script >
+	function change(){
+		let shadow = document.querySelector('.container form');
+		shadow.classList.toggle('shadow');
+	}
+
+</script>	
+<body>
+<div class="container">
+		<button onclick="change()" >set shadow</button>
+	<h2>contact form</h2>  
+	<form  method="get" action="page/thank.html" >
+
+		<input type="hidden" name="id" value="1" required >
+		<div class="group">
+			<input type="text" placeholder="first name" name="first" required>
+			<input type="text" placeholder="last name" name="last" required>
+		</div>
+		<input type="email" placeholder="Write your Email @" name="email" required>
+		<input type="password" placeholder="your password" name="password" required>
+		<input type="password" placeholder="rewrite your password" name="" required>
+		<input type="date" required >
+		<input type="file" name="" required>
+
+		<div class="groundrad flex">
+
+			<label>male<input type="radio" value="male" name="gender" required></label>
+			<label>female<input type="radio" value="female" name="gender" required></label>
+		</div>
+		<div class="universities">
+					 <input id="list" width="100%" list="universities" required>
+					  <datalist id="universities">
+					    <option value="Al AZhar">
+					    <option value="Ain Shamas">
+					    <option value="Minia">
+					    <option value="Assyut">
+					    <option value="qena">
+					  </datalist>
+		</div>
+		<div class="groundrad flex">
+			<label>reading <input type="checkbox" value="reading"  > </label>
+			<label> programming<input type="checkbox" value="programming"  > </label>
+			<label> teaching<input type="checkbox" value="teaching" > </label>
+			<label> traveling<input type="checkbox" value="traveling"  > </label>
+		</div>
+		<textarea placeholder="your message" rows="8" required ></textarea>
+		<input type="reset" name="reset" value="reset">
+		<input type="submit" name="submit" value="submit">
+	</form>
+</div>
+
+</body>
+</html>
